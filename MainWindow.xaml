@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Snake"
         mc:Ignorable="d"
         Title="Snake" Height="500" Width="800"
+        MinWidth="300" MinHeight="300"
         Background="{StaticResource BackgroundColor}"
         Foreground="{StaticResource TextColor}"
         FontFamily="{StaticResource MainFont}"
@@ -13,6 +14,7 @@
         Loaded="Window_Loaded"
         KeyDown="Window_KeyDown">
     
+    <Viewbox>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -30,7 +32,8 @@
                 BorderThickness="1.5"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                RenderOptions.EdgeMode="Aliased">
+                RenderOptions.EdgeMode="Aliased"
+                Margin="20,0,20,20">
             <UniformGrid x:Name="GameGrid"
                          Width="400"
                          Height="400"
@@ -42,4 +45,5 @@
             </UniformGrid>
         </Border>
     </Grid>
+    </Viewbox>
 </Window>
