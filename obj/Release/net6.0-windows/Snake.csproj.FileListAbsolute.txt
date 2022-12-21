@@ -1,0 +1,5 @@
+C:\Users\CFI\Projekty\Snake\obj\Release\net6.0-windows\Snake.csproj.AssemblyReference.cache
+C:\Users\CFI\Projekty\Snake\obj\Release\net6.0-windows\MainWindow.g.cs
+C:\Users\CFI\Projekty\Snake\obj\Release\net6.0-windows\App.g.cs
+C:\Users\CFI\Projekty\Snake\obj\Release\net6.0-windows\Snake_MarkupCompile.cache
+C:\Users\CFI\Projekty\Snake\obj\Release\net6.0-windows\Snake_MarkupCompile.lref
