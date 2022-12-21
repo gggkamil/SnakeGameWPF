@@ -11,7 +11,7 @@
         Foreground="{StaticResource TextColor}"
         FontFamily="{StaticResource MainFont}"
         Icon="Assets/icon.ico"
-        Loaded="Window_Loaded"
+        PreviewKeyDown="Window_PreviewKeyDown"
         KeyDown="Window_KeyDown">
     
     <Viewbox>
@@ -43,6 +43,21 @@
                 
                 
             </UniformGrid>
+        </Border>
+
+        <Border x:Name="Overlay"
+                Grid.Row="1"
+                Background="{StaticResource OverlayColor}"
+                Width="{Binding Path=ActualWidth, ElementName=GridBorder}"
+                Height="{Binding Path=ActualHeight, ElementName=GridBorder}"
+                Margin="{Binding Path=Margin, ElementName=GridBorder}"
+                RenderOptions.EdgeMode="Aliased">
+                <TextBlock x:Name="OverlayText"
+                        Text="Press to start"
+                        FontSize="26"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        TextWrapping="Wrap"/>
         </Border>
     </Grid>
     </Viewbox>

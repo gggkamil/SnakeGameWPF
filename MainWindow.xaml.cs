@@ -29,6 +29,7 @@ namespace Snake
         private readonly int rows = 15, cols = 15;
         private readonly Image[,] gridImages;
         private GameState gameState;
+        private bool gameRunning;
 
 
         public MainWindow()
@@ -38,10 +39,15 @@ namespace Snake
             gameState = new GameState(rows, cols);
         }
 
-        private async void Window_Loaded(object sender, RoutedEventArgs e)
+        private async Task RunGame()
         {
             Draw();
+            Overlay.Visibility = Visibility.Hidden;
             await GameLoop();
+        }
+        private void Window_PerviewKeyDown(object sender, KeyEventArgs e)
+        {
+            //https://youtu.be/uzAXxFBbVoE?t=4094
         }
         private void Window_KeyDown(object sender,KeyEventArgs e)
         {
@@ -99,6 +105,7 @@ namespace Snake
             DrawGrid();
             ScoreText.Text=$"SCORE {gameState.Score}";
         }
+  
         private void DrawGrid()
         {
             for(int r =0;r< rows; r++)
