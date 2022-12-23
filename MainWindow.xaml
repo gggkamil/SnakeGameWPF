@@ -53,8 +53,8 @@
                 Margin="{Binding Path=Margin, ElementName=GridBorder}"
                 RenderOptions.EdgeMode="Aliased">
                 <TextBlock x:Name="OverlayText"
-                        Text="Press to start"
-                        FontSize="26"
+                        Text="PRESS TO START"
+                        FontSize="28"
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
                         TextWrapping="Wrap"/>
