@@ -1,20 +1,20 @@
 ﻿Snake
-1.0.0.0
+
 
 winexe
 C#
 .cs
-c:\Users\CFI\SnakeGameWPF\obj\Debug\net6.0-windows\
+C:\Users\kamil\Documents\GitHub\SnakeGameWPF\obj\Debug\net6.0-windows\
 Snake
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-c:\Users\CFI\SnakeGameWPF\App.xaml
+C:\Users\kamil\Documents\GitHub\SnakeGameWPF\App.xaml
 11407045341
 
-10465159864
-1941905061893
+8-2144094421
+194-2004305220
 MainWindow.xaml;
 
-True
+False
 

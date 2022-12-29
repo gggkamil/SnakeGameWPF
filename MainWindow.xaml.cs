@@ -115,7 +115,7 @@ namespace Snake
                 {
                     Image image = new Image
                     {
-                        Source = Images.Empty
+                        Source = Images.Empty,
                         RenderTransformOrigin = new Point(0.5,0.5)
                     };
                     images[r, c] = image;
@@ -148,8 +148,8 @@ namespace Snake
         private void DrawSnakeHead()
         {
             Position headPos = gameState.HeadPosition();
-            Image image = gridImages[headPos.Row, headPos.Col]
-            image.Source = Image.Head;
+            Image image = gridImages[headPos.Row, headPos.Col];
+            image.Source = Images.Head;
 
             int rotation = dirToRotation[gameState.Dir];
             image.RenderTransform = new RotateTransform(rotation);
@@ -161,7 +161,7 @@ namespace Snake
             for(int i =0; i < positions.Count;i++)
             {
                 Position pos = positions[i];
-                ImageSource source = (i == 0) ? Image.DeadHead : Images.DeadBody;
+                ImageSource source = (i == 0) ? Images.DeadHead : Images.DeadBody;
                 gridImages[pos.Row, pos.Col].Source = source;
                 await Task.Delay(50);
             }
