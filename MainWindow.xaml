@@ -11,7 +11,7 @@
         Foreground="{StaticResource TextColor}"
         FontFamily="{StaticResource MainFont}"
         Icon="Assets/icon.ico"
-        
+        PreviewKeyDown="Window_PreviewKeyDown"
         KeyDown="Window_KeyDown">
     
     <Viewbox>

@@ -58,7 +58,7 @@ namespace Snake
             await ShowGameOver();
             gameState = new GameState(rows, cols);
         }
-        private async void Window_PerviewKeyDown(object sender, KeyEventArgs e)
+        private async void Window_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             if(Overlay.Visibility == Visibility.Visible)
             {
