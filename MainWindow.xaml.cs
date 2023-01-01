@@ -35,7 +35,7 @@ namespace Snake
             {Direction.Left, 270}
         };
 
-
+        private readonly int easyRows = 15, easycols = 15;
         private readonly int rows = 15, cols = 15;
         private readonly Image[,] gridImages;
         private GameState gameState;
@@ -46,7 +46,7 @@ namespace Snake
         {
             InitializeComponent();
             gridImages = SetupGrid();
-            gameState = new GameState(rows, cols);
+            gameState = new GameState(easyRows, easycols);
         }
 
         private async Task RunGame()
