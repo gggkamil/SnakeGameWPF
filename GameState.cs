@@ -100,7 +100,7 @@ namespace Snake
         }
         private bool CanChangeDirection(Direction newDir)
         {
-            if(dirChanges.Count ==2)
+            if (dirChanges.Count == 2)
             {
                 return false;
             }
@@ -109,11 +109,11 @@ namespace Snake
         }
         public void ChangeDirection(Direction dir)
         {
-            if(CanChangeDirection(dir))
+            if (CanChangeDirection(dir))
             {
-               dirChanges.AddLast(dir); 
+                dirChanges.AddLast(dir);
             }
-            
+
         }
         private bool OutsideGrid(Position pos)
         {
