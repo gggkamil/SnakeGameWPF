@@ -15,11 +15,34 @@
         KeyDown="Window_KeyDown">
     
     <Viewbox>
-    <Grid>
-        <Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+            <Menu Margin="0,0,404,29" Height="18" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="41">
+                <MenuItem Header="Level"
+                          
+                         HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                          RenderOptions.EdgeMode="Aliased"
+                     Background="{StaticResource BackgroundColor}"
+                     Foreground="{StaticResource TextColor}"
+                     FontFamily="{StaticResource MainFont}" Height="20" Width="46">
+                    <MenuItem Header="Easy"
+                                      Background="{StaticResource BackgroundColor}"
+        Foreground="{StaticResource TextColor}"
+        FontFamily="{StaticResource MainFont}"></MenuItem>
+                    <MenuItem Header="Medium"
+                                      Background="{StaticResource BackgroundColor}"
+        Foreground="{StaticResource TextColor}"
+        FontFamily="{StaticResource MainFont}"></MenuItem>
+                    <MenuItem Header="Hard"
+                                      Background="{StaticResource BackgroundColor}"
+        Foreground="{StaticResource TextColor}"
+        FontFamily="{StaticResource MainFont}"></MenuItem>
+                </MenuItem>
+            </Menu>
         <TextBlock x:Name="ScoreText"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
