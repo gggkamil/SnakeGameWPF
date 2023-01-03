@@ -31,16 +31,16 @@
                      FontFamily="{StaticResource MainFont}" Height="20" Width="46">
                     <MenuItem Header="Easy"
                                       Background="{StaticResource BackgroundColor}"
-        Foreground="{StaticResource TextColor}"
-        FontFamily="{StaticResource MainFont}"></MenuItem>
+                                      Foreground="{StaticResource TextColor}"
+                                      FontFamily="{StaticResource MainFont}"></MenuItem>
                     <MenuItem Header="Medium"
                                       Background="{StaticResource BackgroundColor}"
-        Foreground="{StaticResource TextColor}"
-        FontFamily="{StaticResource MainFont}"></MenuItem>
+                                      Foreground="{StaticResource TextColor}"
+                                      FontFamily="{StaticResource MainFont}"></MenuItem>
                     <MenuItem Header="Hard"
                                       Background="{StaticResource BackgroundColor}"
-        Foreground="{StaticResource TextColor}"
-        FontFamily="{StaticResource MainFont}"></MenuItem>
+                                      Foreground="{StaticResource TextColor}"
+                                      FontFamily="{StaticResource MainFont}"></MenuItem>
                 </MenuItem>
             </Menu>
         <TextBlock x:Name="ScoreText"
