@@ -40,7 +40,19 @@ namespace Snake
         private readonly Image[,] gridImages;
         private GameState gameState;
         private bool gameRunning;
-
+         private void LevelEasy_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Easy");
+            int rows = 15, cols = 15;
+        }
+        private void LevelMedium_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Medium");
+        }
+        private void LevelHard_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hard");
+        }
 
         public MainWindow()
         {
@@ -71,6 +83,7 @@ namespace Snake
                 gameRunning = false;
             }
         }
+       
         private void Window_KeyDown(object sender,KeyEventArgs e)
         {
             if (gameState.GameOver)
@@ -174,6 +187,12 @@ namespace Snake
                 await Task.Delay(500);
             }
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private async Task ShowGameOver()
         {
             await DrawDeadSnake();
