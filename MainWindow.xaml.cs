@@ -36,22 +36,27 @@ namespace Snake
         };
 
        // private readonly int easyRows = 15, easycols = 15;
-        private readonly int rows = 15, cols = 15;
+        private  int rows = 25, cols = 25;
         private readonly Image[,] gridImages;
         private GameState gameState;
         private bool gameRunning;
          private void LevelEasy_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Easy Level");
-            int rows = 15, cols = 15;
+            rows = 15;
+            cols = 15;
         }
         private void LevelMedium_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Medium Level");
+            rows = 25;
+            cols = 25;
         }
         private void LevelHard_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Hard Level");
+            rows = 40;
+            cols = 40;
         }
 
         public MainWindow()
