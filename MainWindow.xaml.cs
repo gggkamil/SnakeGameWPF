@@ -42,16 +42,16 @@ namespace Snake
         private bool gameRunning;
          private void LevelEasy_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Easy");
+            MessageBox.Show("Easy Level");
             int rows = 15, cols = 15;
         }
         private void LevelMedium_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Medium");
+            MessageBox.Show("Medium Level");
         }
         private void LevelHard_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Hard");
+            MessageBox.Show("Hard Level");
         }
 
         public MainWindow()
