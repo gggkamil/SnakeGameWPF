@@ -36,7 +36,7 @@ namespace Snake
         };
 
        // private readonly int easyRows = 15, easycols = 15;
-        private  int rows = 25, cols = 25;
+        int rows = 25, cols = 25;
         private readonly Image[,] gridImages;
         private GameState gameState;
         private bool gameRunning;
