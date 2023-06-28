@@ -36,11 +36,11 @@ namespace Snake
         };
 
        // private readonly int easyRows = 15, easycols = 15;
-        private  int rows = 25, cols = 25;
+        int rows = 25, cols = 25;
         private readonly Image[,] gridImages;
         private GameState gameState;
         private bool gameRunning;
-         private void LevelEasy_Click(object sender, RoutedEventArgs e)
+        public void LevelEasy_Click(object sender, RoutedEventArgs e)
         {
            
             rows = 15;
